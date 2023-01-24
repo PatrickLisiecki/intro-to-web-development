@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+    <style>
+        body {
+            font-family:'Trebuchet MS'
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Forms
+        Action: the result when the form is submitted
+        Method: GET or POST
+        Input:
+            Type: numerous types (text, radio, submit,...)
+    -->
+    <table align="center" cellspacing="10">
+        <tr><td colspan="2" align="center" bgcolor="lightblue">Important Form</td></tr>
+        <tr>
+            <td align="right"><label for="firstname">First Name:</label></td>
+            <td><input type="text" id="firstname" name="firstname" value="" maxlength="15" size="20"></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="answer">Answer:</label></td>
+            <td> <input type="radio" id="r1" name="x"> <label for="r1">A</label>
+                <input type="radio" id="r2" name="x"> <label for="r2">B</label>
+                <input type="radio" id="r3" name="x"> <label for="r3">C</label>
+                <input type="radio" id="r4" name="x"> <label for="r4">D</label>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><label for="c">Are you human?</label></td>
+            <td><input type="checkbox" id="c"></td>
+        </tr>
+        <tr>
+            <td><label for="states">Choose your state: </label></td>
+            <td>
+                <select name="states" id="states">
+                    <option value="NY">NY</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NY">CA</option>
+                    <option value="NY">FL</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right"><input type="submit" value="Submit"></td>
+        </tr>
+        <tr>
+            <td bgcolor="pink" colspan="2">&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

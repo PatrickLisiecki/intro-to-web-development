@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; }
+
+.board { 
+    position: relative;
+    height: 600px;
+    width: 700px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 100px auto;
+}
+
+.spot { 
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    border-radius: 50%;
+}

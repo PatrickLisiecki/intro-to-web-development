@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var gameBoard = [[0,0,0,0,0,0,0],
+                         [0,0,0,0,0,0,0],
+                         [0,0,0,0,0,0,0],
+                         [0,0,0,0,0,0,0],
+                         [0,0,0,0,0,0,0],
+                         [0,0,0,0,0,0,0]];
+        
+        var redTurn = true, blueTurn;
+
+        function initializeGame() {
+            var id = 0;
+            for (var row = 0; row < 6; row++) {
+                for (var col = 0; col < 7; col++) {
+                    var spot = $("#s" + id);
+                    spot.css("top", row * 100 + 10 + "px");
+                    spot.css("left", col * 100 + 10 + "px");
+                    id++;
+                }
+            }
+        }
+
+       function getColumn(id) {
+            return id % 7;
+        }
+
+        function checkSpot(col) {
+            for(var row = 5; row > -1; row--) {
+                if(gameBoard[row][col] == 0) {
+                    return row;
+                }
+            }
+        }
+
+        $(function() {
+            initializeGame();
+            $(".spot").click(function() {
+                var id = parseInt($(this).attr("id").substring(1));
+                var col = getColumn(id);
+                if (redTurn == true) { 
+                    for (var row = 5; row > -1; row--) {
+                        if (gameBoard[row][col] == 0) {
+                            $(this).css("background", "red");
+                            gameBoard[row][col] == 1;
+                            redTurn = false;
+                            blueTurn = true;
+                        }
+                    }
+                }
+                else if (blueTurn == true) {
+                    for (var row = 5; row > -1; row--) {
+                        if (gameBoard[row][col] == 0) {
+                            $(this).css("background", "blue");
+                            gameBoard[row][col] == 2;
+                            blueTurn = false;
+                            redTurn = true;
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="board">
+        <div class="spot" id="s0"></div>
+        <div class="spot" id="s1"></div>
+        <div class="spot" id="s2"></div>
+        <div class="spot" id="s3"></div>
+        <div class="spot" id="s4"></div>
+        <div class="spot" id="s5"></div>
+        <div class="spot" id="s6"></div>
+        <div class="spot" id="s7"></div>
+        <div class="spot" id="s8"></div>
+        <div class="spot" id="s9"></div>
+        <div class="spot" id="s10"></div>
+        <div class="spot" id="s11"></div>
+        <div class="spot" id="s12"></div>
+        <div class="spot" id="s13"></div>
+        <div class="spot" id="s14"></div>
+        <div class="spot" id="s15"></div>
+        <div class="spot" id="s16"></div>
+        <div class="spot" id="s17"></div>
+        <div class="spot" id="s18"></div>
+        <div class="spot" id="s19"></div>
+        <div class="spot" id="s20"></div>
+        <div class="spot" id="s21"></div>
+        <div class="spot" id="s22"></div>
+        <div class="spot" id="s23"></div>
+        <div class="spot" id="s24"></div>
+        <div class="spot" id="s25"></div>
+        <div class="spot" id="s26"></div>
+        <div class="spot" id="s27"></div>
+        <div class="spot" id="s28"></div>
+        <div class="spot" id="s29"></div>
+        <div class="spot" id="s30"></div>
+        <div class="spot" id="s31"></div>
+        <div class="spot" id="s32"></div>
+        <div class="spot" id="s33"></div>
+        <div class="spot" id="s34"></div>
+        <div class="spot" id="s35"></div>
+        <div class="spot" id="s36"></div>
+        <div class="spot" id="s37"></div>
+        <div class="spot" id="s38"></div>
+        <div class="spot" id="s39"></div>
+        <div class="spot" id="s40"></div>
+        <div class="spot" id="s41"></div>
+    </div>
+</body>
+</html>

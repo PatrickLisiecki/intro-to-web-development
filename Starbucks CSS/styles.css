@@ -1,0 +1,125 @@
+* { margin: 0; padding: 0; }
+
+body { font-family: Helvetica; background-color: gray; }
+
+a { font-family: Helvetica; }
+
+.leftNav {
+    width: 50%;
+    height: 120px;
+    background-color: white;
+    float: left;
+    overflow: hidden;
+}
+
+.leftNav img {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 35px;
+    float: left;
+}
+
+.leftMenu {
+    width: 400px;
+    height: 120px;
+    line-height: 120px;
+    margin-left: 45px;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+}
+
+.leftMenu a {
+    display: block;
+    font-family: Helvetica;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px;
+    float: left;
+}
+
+.leftMenu a:hover { color: rgb(51, 109, 51); }
+
+.rightNav {
+    width: 50%;
+    height: 120px;
+    background-color: white;
+    float: left;
+}
+
+.rightMenu {
+    height: 120px;
+    line-height: 120px;
+    background-color: white;
+    margin-left: 350px;
+}
+
+.rightMenu .findStore {
+    font-family: Helvetica;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.rightMenu .findStore:hover { color: rgb(51, 109, 51); }
+
+.signBtn {
+    width: 30px;
+    height: 15px;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 4px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.signBtn:hover { background-color: lightgray; color: black; }
+
+.joinBtn {
+    width: 30px;
+    height: 15px;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.joinBtn:hover { background-color: gray; color: white; }
+
+.select { 
+    height: 50px; 
+    width: 100%; 
+    line-height: 50px; 
+    text-align: center; 
+    float: left; 
+    overflow: hidden; 
+    background-color: white;
+}
+
+.select a { text-decoration: none; color: black; }
+
+.fullMenu { width: 25%; height: 1000px; background-color: white; float: left; text-align: left; overflow: hidden; }
+
+.imgMenu { width: 75%; height: 1000px; background-color: lightpink; float: right; overflow: hidden; }
+
+.menuTitle { font-size: 20px; font-weight: bold; }
+
+.imgMenuContent { width: 75%; height: 1000px; background-color: white; }
+
+.menuHeader { font-size: 30px; font-weight: bold; }
+
+.drinksHeader { font-size: 20px; font-weight: bold; }
+
+.content { width: 350px; height: 150px; line-height: 150px; background-color: white; float: left; margin: 30px 12px 0 0;  }
+
+.content img { height: 150px; width: 150px; display: block; border-radius: 50%; float: left; }
+
+.coffeeInfo { font-size: 20px; float: left; }

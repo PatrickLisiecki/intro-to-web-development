@@ -1,0 +1,68 @@
+.p1 { 
+    font-family: Helvetica;
+    font-size: 150%;
+    color: rgb(222, 37, 157); 
+    background-color:rgb(54, 54, 54);
+    border: 5px groove lightgrey;
+}
+
+.p2 { 
+    font-family: Arial;
+    font-size: 175%;
+    color: rgb(54, 54, 54);
+    background-color: rgb(255,150,130);
+    border: 5px ridge black;
+}
+
+.p3 {
+    font-family: monospace;
+    font-size: 200%;
+    line-height: 2;
+    color: rgba(150, 180, 0, 0.7);
+    background-color: black;
+    border: 5px ridge lightpink;
+}
+
+.link {
+    font-family: Georgia;
+    font-size: 200%;
+    font-style: italic;
+    text-transform: uppercase;
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+/*
+    Extra effects for links when the user hovers, visits, and presses on the link.
+        :hover
+        :visited
+        :active
+*/
+.link:hover { font-family: monospace; }
+
+.link:visited { color: lightslategray; }
+
+.link:active { background-color: lavender; }
+
+.div1 {
+    font-family: Georgia;
+    font-style: italic;
+    height: 200px;
+    line-height: 200px;
+    background-color: lightsteelblue;
+    text-align: center;
+    color: black;
+
+}
+
+p {
+    color: red;
+    font-size: 200%;
+    font-family: monospace;
+    font-style: oblique;
+    background-color: lavender;
+}
+
+body {
+    background-color: rgb(255,255,255);
+}

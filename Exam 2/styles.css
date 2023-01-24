@@ -1,0 +1,139 @@
+* { margin: 0; padding: 0; }
+
+body { font-family: Arial; }
+
+.top {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    overflow: hidden;
+}
+
+._ {
+    width: 1000px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+.top .facebook { width: 24px; height: 24px; float: right; display: block; margin-left: 10px; margin-top: 43px; }
+
+.top .twitter { width: 32px; height: 32px; float: right; display: block; margin-top: 40px; }
+
+.title { font-size: 42px; float: left; }
+
+.title .letter { color: orangered; }
+
+.topDesc { font-size: 20px; font-style: italic; margin-left: 50px; margin-top: 60px; }
+
+.nav { 
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    background-color: slategrey;
+}
+
+.nav ._ { background-color: slategrey; line-height: 45px; }
+
+.nav a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav a:hover { background-color: orangered; }
+
+.nav .break { font-size: 24px; color: white; }
+
+.largeBanner img { width: 100%; height: 375px; display: block; }
+
+.leftContent {
+    width: 30%;
+    height: 600px;
+    background-color: white;
+    float: left;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.leftMenu { 
+    width: 200px; 
+    height: 600px; 
+    background-color: white; 
+    float: right;
+    margin-right: 30px;
+    color: darkslategrey;
+    overflow: hidden;
+    text-align: center; 
+}
+
+.leftMenu li {
+    display: block;
+    text-align: right;
+    padding: 5px;
+}
+
+.menuTitle { font-size: 24px; }
+
+.rightContent {
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    float: left;
+    margin-top: 30px;
+    color: darkslategrey;
+}
+
+.rightContent .year {
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.rightContent .panel {
+    width: 120px;
+    height: 150px;
+    float: left;
+    background-color: white;
+    margin: 25px 0 0 25px;
+    border: 1px solid darkslategrey;
+    position: relative;
+}
+
+.rightContent .sampleImage {
+    height: 110px;
+    width: 116px;
+    font-size: 72px;
+    text-align: center;
+    line-height: 110px;
+    display: block;
+    color: white;
+    background-color: lightgrey;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.rightContent .sampleItem {
+    font-size: 14px;
+    text-align: center;
+    color: darkslategrey;
+    display: block;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: orangered;
+    display: block;
+    position: absolute;
+    right: -6px;
+    top: -5px;
+}

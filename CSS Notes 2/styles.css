@@ -1,0 +1,73 @@
+/*
+    padding: 10px 20px 30px 40px;
+    top, right, bottom, left
+
+    padding: 10px 20px 30px;
+    top, left and right, bottom
+
+    padding: 10px 20px;
+    top and bottom, left and right
+
+    padding: 10px
+    every side
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.a { 
+    height: 100px; 
+    width: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
+
+.b {
+    height: 100px;
+    width: 100px;
+    padding: 100px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.c {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.d {
+    margin-top: 50px;
+    background-color: lightpink;
+}
+
+.d span {
+    background-color: lavender;
+    display: inline;
+}
+
+.box {
+    height: 850px;
+    width: 850px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tile {
+    background-color: gray;
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: 10px 0px 0px 25px;
+    border: 2px solid white;
+}

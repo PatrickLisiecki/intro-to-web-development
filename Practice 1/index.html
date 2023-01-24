@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice 1</title>
+    <style>
+        body {
+            font-family:'Trebuchet MS'
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table cellspacing="10">
+            <thead><tr><td colspan="3"><h2>Give to CUNY Students</h2></td></tr></thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" width="450">
+                        <label for="amount"><b>Amount</b></label><br>
+                        <input type="text" id="amount" name="amount" value="$0.00" size="75"><br><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150" bgcolor="">
+                        <label for="firstname"><b>First Name</b></label><br>
+                        <input type="text" id="firstname" name="firstname" size="20"><br>
+                    </td>
+                    <td width="150" bgcolor="">
+                        <label for="lastname"><b>Last Name</b></label><br>
+                        <input type="text" id="lastname" name="lastname" size="20"><br>
+                    </td>
+                    <td width="150" bgcolor="">
+                        <label for="email"><b>Email Address</b></label><br>
+                        <input type="text" id="email" name="email" size="20"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" width="300" bgcolor="">
+                        <br><label for="street"><b>Street Address</b></label><br>
+                        <input type="text" id="street" name="street" size="47"><br>
+                    </td>
+                    <td width="150">
+                        <br><label for="street2">Street Address 2</label><br>
+                        <input type="text" id="street2" name="street2" size="20"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150">
+                        <br><label for="city"><b>City</b></label><br>
+                        <input type="text" id="city" name="city" size="20"><br>
+                    </td>
+                    <td width="150">
+                        <br><label for="state"><b>State</b></label><br>
+                        <select id="state" name="state">
+                            <option value="-Choose-">-Choose- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="NY">NY</option>
+                            <option value="NJ">NJ</option>
+                            <option value="CA">CA</option>
+                            <option value="FL">FL</option>
+                        </select>
+                    </td>
+                    <td width="150">
+                        <br><label for="zip"><b>Zip Code</b></label><br>
+                        <input type="text" id="zip" name="zip" size="20"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" width="450">
+                        <br><label for="alum"><b>Are you a CUNY alum?</b></label><br>
+                        <br><input type="radio" id="yes" name="options"><label for="yes">Yes</label>
+                        <br><br><input type="radio" id="no" name="options"><label for="no">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" width="450">
+                        <br><label for="alumtext">CUNY Alumni, please share your college(s) and year(s)</label><br>
+                        <input type="text" id="alumtext" name="alumtext" size="75">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" width="450">
+                        <br><label for="alumtext2">Are you giving in honor of or in memory of someone?</label><br>
+                        <input type="text" id="alumtext2" name="alumtext2" size="75">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" width="450">
+                        <p>
+                            <b>Not in New York?</b> This webpage can currently only accept donations from residents and entities in the following states: AL, AR, AZ, CA, CO, CT, DE, FL, GA, HI, ID, IN, IA, LA, MA, MI, MO, MT, NE, NV, NH, NJ, NM, NY, ND, OH, OK, OR, PA, RI, SD, TX, TN, VT, WI and WY. If you are not a resident of or entity in one of the states listed and you would like to donate to the fund, please email <a href="">andrea.davis@cuny.edu</a>.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" width="450">
+                        <input type="submit" value="&nbsp;&nbsp;Submit&nbsp;&nbsp;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,101 @@
+* { margin: 0; padding: 0; }
+
+body { font-family: Helvetica; background-color: gray; }
+
+a { font-family: Helvetica; }
+
+.leftNav {
+    width: 50%;
+    height: 120px;
+    background-color: white;
+    float: left;
+    overflow: hidden;
+}
+
+.leftNav img {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 35px;
+    float: left;
+}
+
+.leftMenu {
+    width: 400px;
+    height: 120px;
+    line-height: 120px;
+    margin-left: 45px;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+}
+
+.leftMenu a {
+    display: block;
+    font-family: Helvetica;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px;
+    float: left;
+}
+
+.leftMenu a:hover { color: rgb(51, 109, 51); }
+
+.rightNav {
+    width: 50%;
+    height: 120px;
+    background-color: white;
+    float: left;
+}
+
+.rightMenu {
+    height: 120px;
+    line-height: 120px;
+    background-color: red;
+    margin-left: 350px;
+}
+
+.rightMenu .findStore {
+    font-family: Helvetica;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.rightMenu a:hover { color: rgb(51, 109, 51); }
+
+.signBtn {
+    width: 30px;
+    height: 15px;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 4px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.signBtn:hover { background-color: lightgray; color: black; }
+
+.joinBtn {
+    width: 30px;
+    height: 15px;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.joinBtn:hover { background-color: gray; color: white; }
+
+.content ._ { height: 1000px; width: 800px; margin-left: auto; margin-right: auto; background-color: white; }
+
+.panel { width: 250px; float: left; background-color: lightgray; margin: 30px 0 0 12px; overflow: hidden; }
+
+.panel img { height: 200px; width: 250px; background-color: lightgray; }

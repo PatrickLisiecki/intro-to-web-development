@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--<script type="text/javascript">
+        window.onload = function() { document.getElementById("test").style.background = "lavender"; }
+    </script>-->
+
+    <script>
+
+        /*function first() {
+            //var test = document.getElementById("test");
+            //test.style.background = "green";
+
+            var testBtn = document.getElementById("testBtn");
+            testBtn.onclick = function() {
+                alert("ALERT");
+                var test = document.getElementById("test");
+                test.style.background = "aqua";
+
+                var spanTest = document.getElementById("spanTest");
+                spanTest.innerHTML = "GOOD NIGHT";
+            }
+        }*/
+
+        function changeLight() {
+            var red = document.getElementById("red");
+            var yellow = document.getElementById("yellow");
+            var green = document.getElementById("green");
+
+            red.onclick = function() {
+
+                var current = red.style.background;
+
+                if (current != "red") {
+                    red.style.background = "red";
+                    yellow.style.background = "black";
+                    green.style.background = "black";
+                }
+                else {
+                    red.style.background = "black";
+                }
+            
+            }
+
+            yellow.onclick = function() {
+
+                var current = yellow.style.background;
+
+                if (current != "yellow") {
+                    red.style.background = "black";
+                    yellow.style.background = "yellow";
+                    green.style.background = "black";
+                }
+                else {
+                    yellow.style.background = "black";
+                }
+            }
+
+            green.onclick = function() {
+                
+                var current = green.style.background;
+
+                if (current != "green") {
+                    red.style.background = "black";
+                    yellow.style.background = "black";
+                    green.style.background = "green";
+                }
+                else {
+                    green.style.background = "black";
+                }
+
+            }
+        }
+
+        window.onload = changeLight;
+
+    </script>
+</head>
+<body>
+    <div id="test">
+        <!--<button id="testBtn">TEST BUTTON</button>
+        <span id="spanTest">GOOD MORNING</span>-->
+        <div id="lights">
+            <div class="light" id="red"></div>
+            <div class="light" id="yellow"></div>
+            <div class="light" id="green"></div>
+        </div>
+    </div>
+</body>
+</html>

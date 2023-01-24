@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Class Notes</title>
+</head>
+<body>
+    <!-- Headings: <h..></h..>, h1, h2, h3, h... -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <!-- 
+        Paragraph: <p></p>
+        Emphasize: <em></em>
+        Bold emphasis: <strong></strong> or <b></b>
+        Superscript: <sup></sup>
+        Subscript: <sub></sub>
+        Space: &nbsp 
+        New line: <br />
+        Horizontal break: <hr /> 
+    -->
+    <p><em>Paragraph: </em>Lorem &nbsp; ipsum dolor <br /> sit amet, consectetur adipisicing elit. Consectetur autem a neque possimus dolorem repudiandae vero et ad necessitatibus nisi mollitia odit, quidem veritatis veniam consequuntur facere voluptatum perferendis obcaecati.
+    </p>
+    <hr />
+    <p>
+        <strong>Paragraph 2: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis hic tempore, cumque quasi ipsum vero! Tenetur, reprehenderit! Minus nemo suscipit a culpa, cumque modi corporis totam vitae ullam alias reprehenderit.
+    </p>
+
+    <!--
+        Ordered list: <ol></ol>
+        Unordered list: <ul></ul>
+        List: <li></li>
+        Objects: Item I is an object - a
+            title: Displays a string with mouse cursor hover
+            href: References a link and responds to mouse click
+            target: Specifies a name or a keyword that indicates where to display the response that is received after submitting the form
+        Quotes: &quot; &ldquo; &rdquo;
+        Multiplication: &times;
+        Copyright: &copy;
+    -->
+    <ol>
+        <li><a title="&ldquo;This is Item I&rdquo;", href="https://www.google.com/", target="_blank">Item I</a></li>
+            <ul>
+                <li>Price: </li>
+                <li>Owner: </li>
+            </ul>
+        <li>Item II</li>
+        <li>Item III</li>
+    </ol>
+    <hr />
+    <ul>
+        <li>Item I</li>
+        <li>Item II</li>
+        <li>Item III</li>
+    </ul>
+
+    <!-- 
+        Images: <img />
+        Dimensions: height and width
+    -->
+    <img src="vase.jpg" height="240" width="240" />
+
+    <hr />
+
+    <!-- 
+        Tables:
+            Table: <table></table>
+            Rows: <tr></tr>
+            Columns/Data: <td></td>
+            Borders, cell spacing, padding, width
+            Row and column span: rowspan="" and colspan=""
+            Table head: <thead></thead>
+            Table body: <tbody></tbody>
+            Table foot: <tfoot></tfoot>
+    -->
+    <table border="1" cellspacing="0" cellpadding="10" width="500">
+        <tr> <td colspan="3"> 1 </td> <td rowspan="2"> 4 </td> </tr>
+        <tr> <th> 1 </th> <td> 2 </td> <td> 3 </td> </tr>
+        <tr> <td colspan="3"> Total: </td> <td> 4 </td> </tr>
+    </table>
+
+    <hr />
+
+    <table border="1" cellspacing="0" cellpadding="10" width="500">
+       <thead>
+           <tr> <th>Row 1</th> <th>Row 2</th> <th>Row 3</th> </tr>
+       </thead>
+       <tbody bgcolor="lightblue">
+           <tr> <td>DATA</td> <td>DATA</td> <td>DATA</td> </tr>
+           <tr> <td>DATA</td> <td>DATA</td> <td>DATA</td> </tr>
+           <tr> <td>DATA</td> <td>DATA</td> <td>DATA</td> </tr>
+           <tr> <td>DATA</td> <td>DATA</td> <td>DATA</td> </tr>
+           <tr> <td>DATA</td> <td>DATA</td> <td>DATA</td> </tr>
+           <tr> <td>DATA</td> <td>DATA</td> <td>DATA</td> </tr>
+       </tbody>
+       <tfoot>
+            <tr> <th>Row 1</th> <th>Row 2</th> <th>Row 3</th> </tr>
+       </tfoot>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+* { margin: 0; padding: 0; }
+
+body { font-family: Helvetica; }
+
+#test {
+    height: 1000px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    line-height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#lights {
+    width: 200px;
+    height: 600px;
+    background-color: gray;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+
+.light { 
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 25px;
+    margin-top: 35px;
+}
